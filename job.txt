@@ -1,0 +1,32 @@
+
+header same as letmates,
+menu -home about-us services blog podcast contact-us *
+
+section -1  same of speakeasy home page same *
+sec- 2  letmates 1 *
+sec-3 letmates-2  *
+sec-4 letmates-3  *
+sec-5 letmates 4  *
+sec-6 letmates-6  *
+sec-7 video section hobe speakeasy  *
+sec-8 letmates-7 *
+sec-9 news trip
+client section trip-law
+sec-10 have question trip-law
+footer ssame letmates
+
+abou us
+
+same as letmates
+
+services
+same to trip law
+add new
+call to action section
+
+
+
+ blog podcast 
+
+ contact-us
+same as letmates
