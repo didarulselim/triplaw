@@ -1,39 +1,3 @@
-<?php
-
-if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) &&isset($_POST['con'])) {
-    # code...
-        if (!empty($_POST['name']) && !empty($_POST['number']) && !empty($_POST['email']) ) {
-            # code...
-            $name = $_POST['name'];
-            $number = $_POST['number'];
-            $email = $_POST['email'];
-
-            if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                # code...
-                echo 'Kindly Provide Valid Email';
-            }
-                else {
-                 $body = $name." ".$number."\n".$email;
-                    if (mail('info@trip-law.com' , 'Trip-Law', $body ,'From: didarulselim@gmail.com')) {
-                    echo " Thanks For Your Mail";
-                 }
-                 else {
-                    echo 'There is a problem in sending mail.';
-                 }
-                }
-            
-            }
-       
-        else {
-            echo 'All Fields Are Required.';
-        }
-     }
-        else {
-            echo '';
-        }
-        
-?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -69,10 +33,14 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel.min.cs">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
     <!-- link end -->
-        <title>Service - Trip-Law</title>
+        <title>Immigration Lawyer Hardam Tripathi, Esq.</title>
   </head>
   <body>
     <header class="sticky-top">
@@ -115,8 +83,6 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
     </header>
 
   
-
-
 <section class="service">
   <div class="container">
     <div class="row">
@@ -129,7 +95,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
 
       <div class="services-list">
         <div class=" row ">
-        <div class="col-lg-4 list " >
+        <div class="col-lg-4 col-md-6 list " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1"> 
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -154,7 +120,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
         </div>
       </div>
 
-      <div class="col-lg-4 list  " >
+      <div class="col-lg-4 col-md-6 list  " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1">
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -164,7 +130,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           </div>
         </div>
 
-      <div class="col-lg-4 list " >
+      <div class="col-lg-4 col-md-6 list " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1">
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -173,10 +139,8 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           </div>
           </div>
       </div>
-    </div>
 
-    <div class=" row ">
-        <div class="col-lg-4 list " >
+        <div class="col-lg-4 col-md-6 list " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1"> 
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -186,7 +150,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           </div>
         </div>
 
-      <div class="col-lg-4 list  " >
+      <div class="col-lg-4 col-md-6 list  " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1">
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -196,7 +160,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           </div>
         </div>
 
-      <div class="col-lg-4 list " >
+      <div class="col-lg-4 col-md-6 list " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1">
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -206,7 +170,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           </div>
       </div>
 
-      <div class="col-lg-4 list " >
+      <div class="col-lg-4 col-md-6 list " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1">
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -215,7 +179,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           </div>
           </div>
       </div>
-      <div class="col-lg-4 list " >
+      <div class="col-lg-4 col-md-6 list " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1">
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -224,7 +188,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           </div>
           </div>
       </div>
-      <div class="col-lg-4 list " >
+      <div class="col-lg-4 col-md-6 list " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1">
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -233,7 +197,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           </div>
           </div>
       </div>
-      <div class="col-lg-4 list " >
+      <div class="col-lg-4 col-md-6 list " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1">
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -242,7 +206,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           </div>
           </div>
       </div>
-      <div class="col-lg-4 list " >
+      <div class="col-lg-4 col-md-6 list " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1">
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -251,7 +215,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           </div>
           </div>
       </div>
-      <div class="col-lg-4 list " >
+      <div class="col-lg-4 col-md-6 list " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1">
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -260,7 +224,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           </div>
           </div>
       </div>
-      <div class="col-lg-4 list " >
+      <div class="col-lg-4 col-md-6 list " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1">
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -269,7 +233,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           </div>
           </div>
       </div>
-      <div class="col-lg-4 list " >
+      <div class="col-lg-4 col-md-6 list " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1">
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -278,7 +242,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           </div>
           </div>
       </div>
-      <div class="col-lg-4 list " >
+      <div class="col-lg-4 col-md-6 list " >
           <div class="s-list d-flex" data-bs-toggle="modal" data-bs-target="#modal-1">
             <span class="me-3"><img src="image/law.png" alt=""></span>
           <div class="sr" >
@@ -296,7 +260,24 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
 
 
 
-<div class="section dsl">
+<section class="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-7  offset-lg-5">
+        <div class="cta-tex">
+          <div class="heading">
+            <h1>Consultations for prospective immigrants</h1>
+          </div>
+          <p>By being available to our clients, we can respond to their concerns and questions and carry out our duty for keeping our clients up-to-date about the case.</p>
+          <a href="#" class="btn h-btn mb-5">Get A Free Consultation </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section dsl">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -304,12 +285,12 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
             </div>
         </div>
     </div>
-</div>
+</section>
 
 <footer class="pt-5 pb-2 text-white">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-md-6">
         <a class="navbar-brand logo" href="#">
           <img src="image/Snip-Logo1.jpg" alt="" width="150px" height="37px">
         </a>
@@ -317,7 +298,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           With attorneys based in Florida USA our team has substantial experience in all areas of family and business immigration law. With a combined experience of 30 years Trip law is providing excellent services all over the United States.
         </p>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-md-6">
         <h5 class="mt-2">Contact Details</h5>
         <p class="mt-4">5304 South Florida Avenue, Suite 404B, Lakeland, FL 33813 <br> 
           Phone: +18633702427
@@ -327,7 +308,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
           Mon-Fri: 7:00 am – 7:00pm
         </p>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-md-6">
         <h5 class="mt-2">Useful Links:</h5>
         <p class="mt-4">
           <a href="Privacy-Policy.html" >Privacy Policy</a> <br>
@@ -340,7 +321,7 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
         <a href="contact.php" target="_blank">Contact</a>
       </p>
       </div>
-      <div class="col-lg-3">
+      <div class="col-lg-3 col-md-6">
         <h5 class="mt-2">Services</h5>
         <p class="mt-4">Green Card <br> Family-Based Immigration <br>Employment Based Immigration <br>Deportation Defense <br> manitarian and Religious Visas <br> Change and Adjustment of Status <br> US Citizenship <br> Waivers </p>
       </div>
@@ -374,10 +355,8 @@ if (isset($_POST['name']) && isset($_POST['email']) &&  isset($_POST['number']) 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js/bootstrap.bundle.js" ></script>
-
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/bootstrap.js"></script -->>
     <!--Jquery -->
-
 
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->

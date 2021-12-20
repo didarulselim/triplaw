@@ -12,6 +12,15 @@ header {
 .header-top {
 	border-bottom: 1px solid #eee;
 }
+.navbar-toggler {
+
+    background-color: #262561 !important;
+    border: 3px solid #ff4300 !important;
+}
+.navbar-toggler-icon {
+    border: 2px solid #ff4300 !important;
+    background-color: #fff !important;
+}
 .navbar-nav .nav-item {
 	
 }
@@ -306,9 +315,19 @@ form button.btn {
     border-color: #FF4300;
 }
 
-
+.ex {
+	display: flex;
+}
+.ex-img {
+	width: 50%;
+}
+.ex-content {
+	width: 50%;
+}
 .news {
 	padding: 3%;
+		background: url('./image/hero-3.jpg') center no-repeat fixed;
+	background-size: cover;
 }
 
 .news .heading h1 {
@@ -337,6 +356,12 @@ form button.btn {
 .accordion-item .collapse {
 	border: 1px solid #ff4300;
     margin-top: -1px;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #ff4300 !important;
+    outline: 0;
+    box-shadow: none !important;
 }
 
 footer{
@@ -404,8 +429,89 @@ footer p a:hover {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+.call-to-action {
+	padding: 3%;
+	/*background-color: #FF4501;*/
+	background: url('./image/cta-4.jpg') center no-repeat fixed;
+	background-size: cover;
+	color: #fff !important;
+}
+.clients .heading h1 {
+	font-size: 52px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.clients {
+	padding: 3%;
+}
+.client-top img {
+	width: 75px !important;
+	height: 75px !important;
+	margin-right: 15px;
+	border-radius: 100%;
+}
+.client-top h5{
+	margin: revert;
+}
+.owl-carousel  {
+	margin: 3%;
+}
+.owl-carousel .item {
+    box-shadow: 2px 3px 5px 1px #ff4300;
+    border: 1px solid #ff4300;
+    padding: 20px;
+    width: 260px;
+}
+.owl-carousel.owl-drag .owl-item {
+	width: 260px !important;
+}
+.owl-carousel .owl-stage {
+	display: flex;
+}
+.client-bottom {
+	height: 150px;
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+	.header-top p {
+		font-size: 12px;
+	}
+	.home-video {
+		margin-top: 0px;
+		margin-bottom: 10%;
+	}
+	.fild-contant .heading h1 {
+		font-size: 24px;
+	}
+	.fild-contant p {
+		font-size: 16px;
+	}
+}
+@media (min-width: 320px) and (max-width: 767px) {
+
+	.header-top p {
+		font-size: 10px;
+	}
+	.fild-contant .heading h1 {
+		font-size: 14px;
+	}
+	.fild-contant p {
+		font-size: 14px;
+	}
+	.home-video {
+		margin-top: 0px;
+		margin-bottom: 10%;
+	}
+	.ex {
+	display: block;
+}
+.ex-img {
+	width: 100%;
+}
+.ex-content {
+	width: 100%;
+}
 
 }
 
-	}
